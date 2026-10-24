@@ -34,7 +34,7 @@ reversed clips differ from the forward ones only by float32 rounding (largest di
 
 ![Forward vs reversed scores](figures/multivideo/fig_mv2_reversal.png)
 
-The full write-up is in [`docs/Results.docx`](docs/Results.docx).
+The full write-up is in [`Results/Results.docx`](Results/Results.docx).
 
 ## The video
 
@@ -152,7 +152,7 @@ data/         frames/ (84 frames), frames.csv, queries.json, ground_truth.json, 
 outputs/      per model: embeddings.npz, scores.npz, predictions.json, results.json, figures
 corpus/       multi-video frames, embeddings (emb/clip_l14) and manifests
 figures/      all figures, including annotation_evidence/ and multivideo/
-docs/         Results.docx, the full results report
+Results/      Results.docx, the full results report
 ```
 
 ## Reproducing

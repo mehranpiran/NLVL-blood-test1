@@ -27,7 +27,7 @@ ap.add_argument("--out", default=None, help="output .docx path")
 A = ap.parse_args()
 ROOT = A.root
 FIG = A.figures or f"{ROOT}/figures"
-OUT = A.out or f"{ROOT}/docs/NLVL_pilot_results.docx"
+OUT = A.out or f"{ROOT}/Results/NLVL_pilot_results.docx"
 
 NICE = {"clip": "CLIP ViT-B/32", "clip_l14": "CLIP ViT-L/14",
         "clip_l14_squash": "CLIP ViT-L/14 (squash)", "clip_l14_zoom": "CLIP ViT-L/14 (zoom)",

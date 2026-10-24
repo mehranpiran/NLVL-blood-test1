@@ -6,7 +6,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 import datetime, os
 
-OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs", "NLVL_pilot_proposal.docx")
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Results", "NLVL_pilot_proposal.docx")
 
 doc = Document()
 

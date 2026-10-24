@@ -7,7 +7,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repository root
-OUT = f"{ROOT}/docs/NLVL_pilot_results.docx"
+OUT = f"{ROOT}/Results/NLVL_pilot_results.docx"
 FIG = f"{ROOT}/figures"
 
 NICE = {"clip": "CLIP ViT-B/32", "clip_l14": "CLIP ViT-L/14",

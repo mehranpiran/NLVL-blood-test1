@@ -8,7 +8,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repository root
-OUT  = f"{ROOT}/docs/NLVL_multivideo_timereversal.docx"
+OUT  = f"{ROOT}/Results/NLVL_multivideo_timereversal.docx"
 EMB  = f"{ROOT}/corpus/emb/clip_l14"
 
 AOT = json.load(open(f"{EMB}/arrow_of_time.json"))
