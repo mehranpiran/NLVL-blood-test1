@@ -1,0 +1,29 @@
+NLVL pilot - video source record
+================================
+Title          : A Person Having a Blood Examination
+Source page    : https://www.pexels.com/video/a-person-having-a-blood-examination-8460351/
+Download URL   : https://www.pexels.com/download/video/8460351/
+Resolved file  : 8460351-hd_1920_1080_24fps.mp4  (served as 1280x720)
+Licence        : Pexels License - free to use, no attribution required
+Downloaded     : 2026-10-13
+Local filename : pexels_8460351.mp4
+
+Measured properties (ffprobe)
+-----------------------------
+codec          : h264
+resolution     : 1280 x 720
+frame rate     : 24000/1001 = 23.976 fps
+duration       : 84.417667 s
+total frames   : 2024
+file size      : 11,074,528 bytes
+
+Frame sampling
+--------------
+command        : ffmpeg -i pexels_8460351.mp4 -vf fps=1 -q:v 2 frames/frame_%04d.jpg
+frames written : 84  (frame_0001 .. frame_0084)
+mapping        : frame_NNNN corresponds to timestamp t = (NNNN - 1) seconds
+map file       : frames.csv
+
+Note: the project proposal states 1080p. The Pexels download endpoint serves this
+clip at 1280x720. This does not affect the method, because CLIP resizes every
+input frame to 224x224 regardless of the source resolution.

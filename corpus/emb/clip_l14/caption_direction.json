@@ -1,0 +1,51 @@
+{
+ "model": "clip_l14",
+ "n": 6,
+ "correct": 2,
+ "acc": 0.3333333333333333,
+ "binomial_p": 0.6875,
+ "per_clip": [
+  {
+   "clip": "px6290525_B_blood_extraction_close_up",
+   "shoot": "B",
+   "src": "verified",
+   "score": 0.02875678613781929,
+   "correct": true
+  },
+  {
+   "clip": "v13_video_of_venipuncture_blood_draw_or_collection_u",
+   "shoot": "W2",
+   "src": "verified",
+   "score": -0.024237360805273056,
+   "correct": false
+  },
+  {
+   "clip": "px8460351_A_a_person_having_a_blood_examination",
+   "shoot": "A",
+   "src": "verified",
+   "score": 0.016531940549612045,
+   "correct": true
+  },
+  {
+   "clip": "px8460350_A_putting_band_aid_on_a_persons_arm",
+   "shoot": "A",
+   "src": "title",
+   "score": -0.028645586222410202,
+   "correct": false
+  },
+  {
+   "clip": "px6290532_B_nurse_putting_a_band_aid_on_patient_arm",
+   "shoot": "B",
+   "src": "title",
+   "score": -0.0007642675191164017,
+   "correct": false
+  },
+  {
+   "clip": "px6290530_B_a_medical_professional_using_a_tourniquet_on",
+   "shoot": "B",
+   "src": "verified",
+   "score": -0.07870139926671982,
+   "correct": false
+  }
+ ]
+}

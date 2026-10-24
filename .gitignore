@@ -1,0 +1,10 @@
+.DS_Store
+__MACOSX/
+__pycache__/
+*.mp4
+*.webm
+*.mpg
+*.ogv
+models/
+logs/
+~$*.docx

@@ -1,0 +1,33 @@
+{
+  "video": "pexels_8460351.mp4",
+  "annotator": "drafted from 1 fps frames; PENDING human verification",
+  "annotated_on": "2026-10-13",
+  "time_unit": "seconds; frame_NNNN corresponds to t = NNNN - 1",
+  "boundary_rule": "An action starts at the first sampled second in which the action is visibly under way, and ends at the last sampled second in which it is still under way. Intervals are inclusive of both endpoints.",
+  "intervals": {
+    "p1": {"start": 1,  "end": 7,
+           "rule": "starts when the cotton pad first touches the skin; ends at the last frame in which the pad is still in contact or being withdrawn"},
+    "p2": {"start": 11, "end": 15,
+           "rule": "starts when the capped needle device enters the frame; ends at the last frame in which the yellow cap is still on or coming off"},
+    "p3": {"start": 16, "end": 19,
+           "rule": "starts when the uncapped needle is brought down towards the skin; ends when the hub is seated flat on the arm and the hand settles"},
+    "p4": {"start": 36, "end": 39,
+           "rule": "starts when the gloved hand picks up the purple-capped tube; ends when the tube is fully seated in the holder"},
+    "p5": {"start": 45, "end": 72,
+           "rule": "starts at the first frame with a visible dark red column in the tube; ends at the last frame before the filled tube is gripped for removal"},
+    "p6": {"start": 73, "end": 77,
+           "rule": "starts when the gloved hand grips the filled tube and begins to pull; ends when the replacement tube is seated"}
+  },
+  "known_ambiguities": [
+    {"region": [78, 83],
+     "issue": "A SECOND tube is filled here; a dark red column becomes visible at t=82. This region is visually near-identical to p5 (collect_blood) but is NOT part of the p5 ground-truth interval.",
+     "handling": "Scored as-is. If a method predicts p5 inside [78,83] it receives tIoU 0. This will be reported explicitly rather than corrected, because it is a genuine property of the video."}
+  ],
+  "negatives_verified_absent": {
+    "h1": "the blue tourniquet is already tied at t=0 (verified in zoom/A_tourniquet.jpg) - it is never applied on camera",
+    "h2": "the blue tourniquet is still tied at t=83 (verified in zoom/A_tourniquet.jpg) - it is never removed on camera",
+    "h3": "the needle holder is still on the arm at t=83 - the needle is never withdrawn on camera",
+    "h4": "no cotton ball is pressed on a puncture site at any point",
+    "e1": "no MRI scanner appears", "e2": "no blood pressure cuff appears", "e3": "no X-ray appears"
+  }
+}

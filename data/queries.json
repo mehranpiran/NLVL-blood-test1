@@ -1,0 +1,40 @@
+{
+  "video": "pexels_8460351.mp4",
+  "fps_sampled": 1,
+  "n_frames": 84,
+  "duration_s": 84.42,
+  "queries": [
+    {"id": "p1", "type": "positive", "name": "clean_arm",
+     "text": "a gloved hand cleans the inside of the patient's elbow with a cotton swab"},
+    {"id": "p2", "type": "positive", "name": "prepare_needle",
+     "text": "a gloved hand holds a needle and removes its plastic cap"},
+    {"id": "p3", "type": "positive", "name": "insert_needle",
+     "text": "a nurse inserts the needle into the patient's arm"},
+    {"id": "p4", "type": "positive", "name": "attach_tube",
+     "text": "a gloved hand pushes a blood collection tube into the needle holder"},
+    {"id": "p5", "type": "positive", "name": "collect_blood",
+     "text": "dark red blood flows into the blood collection tube"},
+    {"id": "p6", "type": "positive", "name": "change_tube",
+     "text": "a gloved hand pulls the filled blood tube out of the holder"},
+
+    {"id": "h1", "type": "hard_negative", "name": "apply_tourniquet",
+     "text": "a nurse ties a blue tourniquet around the patient's upper arm",
+     "opposes": "tourniquet is already tied at t=0 and is never applied on camera"},
+    {"id": "h2", "type": "hard_negative", "name": "remove_tourniquet",
+     "text": "a nurse unties and removes the blue tourniquet from the patient's arm",
+     "opposes": "tourniquet is still tied at t=83 and is never removed on camera"},
+    {"id": "h3", "type": "hard_negative", "name": "withdraw_needle",
+     "text": "a nurse pulls the needle out of the patient's arm",
+     "opposes": "p3 insert_needle; the needle is never withdrawn on camera"},
+    {"id": "h4", "type": "hard_negative", "name": "press_cotton",
+     "text": "a gloved hand presses a cotton ball on the puncture site after the needle is removed",
+     "opposes": "p1 clean_arm; same objects, but this never happens"},
+
+    {"id": "e1", "type": "easy_negative", "name": "mri",
+     "text": "a patient lies inside an MRI scanner"},
+    {"id": "e2", "type": "easy_negative", "name": "blood_pressure",
+     "text": "a doctor measures blood pressure with an inflatable cuff and a stethoscope"},
+    {"id": "e3", "type": "easy_negative", "name": "xray",
+     "text": "a radiologist looks at a chest X-ray on a light box"}
+  ]
+}

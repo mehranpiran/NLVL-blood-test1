@@ -1,0 +1,26 @@
+{
+  "mean_angle_deg": 90.01262664794922,
+  "n_steps": 348,
+  "per_clip_mean_angle": [
+    [
+      "px6290525_B_blood_extraction_close_up",
+      89.81507873535156,
+      126
+    ],
+    [
+      "px6290530_B_a_medical_professional_using_a_tourniquet_on",
+      90.13744354248047,
+      79
+    ],
+    [
+      "px8460350_A_putting_band_aid_on_a_persons_arm",
+      90.21128845214844,
+      84
+    ],
+    [
+      "v13_video_of_venipuncture_blood_draw_or_collection_u",
+      89.98453521728516,
+      59
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "model": "clip",
+    "r_opposite": 0.9304897401713892,
+    "peak_dist_opposite": 0,
+    "r_unrelated": 0.21594090426260804,
+    "peak_dist_unrelated": 0
+  },
+  {
+    "model": "clip_l14",
+    "r_opposite": 0.9689773021690152,
+    "peak_dist_opposite": 0,
+    "r_unrelated": 0.06209359640828184,
+    "peak_dist_unrelated": 39
+  },
+  {
+    "model": "clip_l14_squash",
+    "r_opposite": 0.9800576754570086,
+    "peak_dist_opposite": 1,
+    "r_unrelated": 0.27279142593104544,
+    "peak_dist_unrelated": 5
+  },
+  {
+    "model": "clip_l14_zoom",
+    "r_opposite": 0.9800938776076775,
+    "peak_dist_opposite": 0,
+    "r_unrelated": 0.23040892156314155,
+    "peak_dist_unrelated": 36
+  },
+  {
+    "model": "biomedclip",
+    "r_opposite": 0.7700220982742088,
+    "peak_dist_opposite": 11,
+    "r_unrelated": -0.1511506038747198,
+    "peak_dist_unrelated": 33
+  }
+]

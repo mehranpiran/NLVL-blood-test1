@@ -1,0 +1,691 @@
+{
+  "model": "biomedclip",
+  "thresholds": {
+    "tau_absolute": 0.3572291135787964,
+    "tau_margin": -0.08616062998771667,
+    "fitted_on": [
+      "e1",
+      "e2",
+      "e3"
+    ]
+  },
+  "summary": {
+    "E1_baseline": {
+      "mean_tIoU": 0.052083333333333336,
+      "median_tIoU": 0.0,
+      "R@0.3": 0.0,
+      "R@0.5": 0.0,
+      "rejection_acc_all_neg": 0.0,
+      "rejection_acc_hard": 0.0,
+      "rejection_acc_easy": 0.0,
+      "false_abstain_on_positives": 0
+    },
+    "E2_temporal": {
+      "mean_tIoU": 0.09838935574229692,
+      "median_tIoU": 0.0,
+      "R@0.3": 0.16666666666666666,
+      "R@0.5": 0.0,
+      "rejection_acc_all_neg": 0.0,
+      "rejection_acc_hard": 0.0,
+      "rejection_acc_easy": 0.0,
+      "false_abstain_on_positives": 0
+    },
+    "E3_abstention": {
+      "mean_tIoU": 0.09838935574229692,
+      "median_tIoU": 0.0,
+      "R@0.3": 0.16666666666666666,
+      "R@0.5": 0.0,
+      "rejection_acc_all_neg": 0.42857142857142855,
+      "rejection_acc_hard": 0.0,
+      "rejection_acc_easy": 1.0,
+      "false_abstain_on_positives": 1
+    }
+  },
+  "per_query": {
+    "E1_baseline": {
+      "p1": {
+        "name": "clean_arm",
+        "type": "positive",
+        "pred": [
+          7.0,
+          16.0
+        ],
+        "gt": [
+          1,
+          7
+        ],
+        "tIoU": 0.0625,
+        "peak_t": 12.0,
+        "abs_score": 0.4787,
+        "margin": 0.023,
+        "peakiness": 2.392,
+        "accepted": true
+      },
+      "p2": {
+        "name": "prepare_needle",
+        "type": "positive",
+        "pred": [
+          1.0,
+          6.0
+        ],
+        "gt": [
+          11,
+          15
+        ],
+        "tIoU": 0.0,
+        "peak_t": 3.0,
+        "abs_score": 0.4365,
+        "margin": -0.0277,
+        "peakiness": 2.52,
+        "accepted": true
+      },
+      "p3": {
+        "name": "insert_needle",
+        "type": "positive",
+        "pred": [
+          71.0,
+          71.0
+        ],
+        "gt": [
+          16,
+          19
+        ],
+        "tIoU": 0.0,
+        "peak_t": 71.0,
+        "abs_score": 0.4706,
+        "margin": 0.0304,
+        "peakiness": 2.801,
+        "accepted": true
+      },
+      "p4": {
+        "name": "attach_tube",
+        "type": "positive",
+        "pred": [
+          56.0,
+          59.0
+        ],
+        "gt": [
+          36,
+          39
+        ],
+        "tIoU": 0.0,
+        "peak_t": 57.0,
+        "abs_score": 0.4065,
+        "margin": -0.0202,
+        "peakiness": 2.174,
+        "accepted": true
+      },
+      "p5": {
+        "name": "collect_blood",
+        "type": "positive",
+        "pred": [
+          65.0,
+          71.0
+        ],
+        "gt": [
+          45,
+          72
+        ],
+        "tIoU": 0.25,
+        "peak_t": 69.0,
+        "abs_score": 0.4279,
+        "margin": -0.0348,
+        "peakiness": 2.313,
+        "accepted": true
+      },
+      "p6": {
+        "name": "change_tube",
+        "type": "positive",
+        "pred": [
+          65.0,
+          65.0
+        ],
+        "gt": [
+          73,
+          77
+        ],
+        "tIoU": 0.0,
+        "peak_t": 65.0,
+        "abs_score": 0.3669,
+        "margin": -0.0728,
+        "peakiness": 2.246,
+        "accepted": true
+      },
+      "h1": {
+        "name": "apply_tourniquet",
+        "type": "hard_negative",
+        "pred": [
+          7.0,
+          14.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 10.0,
+        "abs_score": 0.4561,
+        "margin": -0.0074,
+        "peakiness": 2.551,
+        "accepted": true
+      },
+      "h2": {
+        "name": "remove_tourniquet",
+        "type": "hard_negative",
+        "pred": [
+          7.0,
+          17.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 12.0,
+        "abs_score": 0.4523,
+        "margin": -0.0264,
+        "peakiness": 2.334,
+        "accepted": true
+      },
+      "h3": {
+        "name": "withdraw_needle",
+        "type": "hard_negative",
+        "pred": [
+          71.0,
+          71.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 71.0,
+        "abs_score": 0.4403,
+        "margin": -0.0304,
+        "peakiness": 2.058,
+        "accepted": true
+      },
+      "h4": {
+        "name": "press_cotton",
+        "type": "hard_negative",
+        "pred": [
+          2.0,
+          6.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 4.0,
+        "abs_score": 0.461,
+        "margin": -0.0062,
+        "peakiness": 2.05,
+        "accepted": true
+      },
+      "e1": {
+        "name": "mri",
+        "type": "easy_negative",
+        "pred": [
+          7.0,
+          8.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 7.0,
+        "abs_score": 0.2692,
+        "margin": -0.2046,
+        "peakiness": 2.074,
+        "accepted": true
+      },
+      "e2": {
+        "name": "blood_pressure",
+        "type": "easy_negative",
+        "pred": [
+          13.0,
+          18.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 15.0,
+        "abs_score": 0.3639,
+        "margin": -0.0705,
+        "peakiness": 2.37,
+        "accepted": true
+      },
+      "e3": {
+        "name": "xray",
+        "type": "easy_negative",
+        "pred": [
+          0.0,
+          2.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 1.0,
+        "abs_score": 0.269,
+        "margin": -0.1703,
+        "peakiness": 2.785,
+        "accepted": true
+      }
+    },
+    "E2_temporal": {
+      "p1": {
+        "name": "clean_arm",
+        "type": "positive",
+        "pred": [
+          0.0,
+          16.0
+        ],
+        "gt": [
+          1,
+          7
+        ],
+        "tIoU": 0.4118,
+        "peak_t": 8.0,
+        "abs_score": 0.4673,
+        "margin": 0.0211,
+        "peakiness": 2.366,
+        "accepted": true
+      },
+      "p2": {
+        "name": "prepare_needle",
+        "type": "positive",
+        "pred": [
+          1.0,
+          6.0
+        ],
+        "gt": [
+          11,
+          15
+        ],
+        "tIoU": 0.0,
+        "peak_t": 4.0,
+        "abs_score": 0.4286,
+        "margin": -0.035,
+        "peakiness": 2.645,
+        "accepted": true
+      },
+      "p3": {
+        "name": "insert_needle",
+        "type": "positive",
+        "pred": [
+          68.0,
+          71.0
+        ],
+        "gt": [
+          16,
+          19
+        ],
+        "tIoU": 0.0,
+        "peak_t": 70.0,
+        "abs_score": 0.4469,
+        "margin": 0.0403,
+        "peakiness": 2.125,
+        "accepted": true
+      },
+      "p4": {
+        "name": "attach_tube",
+        "type": "positive",
+        "pred": [
+          56.0,
+          62.0
+        ],
+        "gt": [
+          36,
+          39
+        ],
+        "tIoU": 0.0,
+        "peak_t": 57.0,
+        "abs_score": 0.4037,
+        "margin": -0.0219,
+        "peakiness": 2.747,
+        "accepted": true
+      },
+      "p5": {
+        "name": "collect_blood",
+        "type": "positive",
+        "pred": [
+          66.0,
+          70.0
+        ],
+        "gt": [
+          45,
+          72
+        ],
+        "tIoU": 0.1786,
+        "peak_t": 68.0,
+        "abs_score": 0.423,
+        "margin": -0.0137,
+        "peakiness": 2.483,
+        "accepted": true
+      },
+      "p6": {
+        "name": "change_tube",
+        "type": "positive",
+        "pred": [
+          1.0,
+          6.0
+        ],
+        "gt": [
+          73,
+          77
+        ],
+        "tIoU": 0.0,
+        "peak_t": 4.0,
+        "abs_score": 0.3556,
+        "margin": -0.108,
+        "peakiness": 2.38,
+        "accepted": true
+      },
+      "h1": {
+        "name": "apply_tourniquet",
+        "type": "hard_negative",
+        "pred": [
+          7.0,
+          14.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 10.0,
+        "abs_score": 0.4506,
+        "margin": -0.0086,
+        "peakiness": 2.679,
+        "accepted": true
+      },
+      "h2": {
+        "name": "remove_tourniquet",
+        "type": "hard_negative",
+        "pred": [
+          7.0,
+          17.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 12.0,
+        "abs_score": 0.4417,
+        "margin": -0.0236,
+        "peakiness": 2.33,
+        "accepted": true
+      },
+      "h3": {
+        "name": "withdraw_needle",
+        "type": "hard_negative",
+        "pred": [
+          79.0,
+          83.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 81.0,
+        "abs_score": 0.4262,
+        "margin": -0.0192,
+        "peakiness": 2.134,
+        "accepted": true
+      },
+      "h4": {
+        "name": "press_cotton",
+        "type": "hard_negative",
+        "pred": [
+          2.0,
+          9.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 4.0,
+        "abs_score": 0.4532,
+        "margin": -0.0103,
+        "peakiness": 2.054,
+        "accepted": true
+      },
+      "e1": {
+        "name": "mri",
+        "type": "easy_negative",
+        "pred": [
+          36.0,
+          38.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 37.0,
+        "abs_score": 0.2581,
+        "margin": -0.1567,
+        "peakiness": 2.015,
+        "accepted": true
+      },
+      "e2": {
+        "name": "blood_pressure",
+        "type": "easy_negative",
+        "pred": [
+          6.0,
+          17.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 14.0,
+        "abs_score": 0.3572,
+        "margin": -0.0862,
+        "peakiness": 2.437,
+        "accepted": true
+      },
+      "e3": {
+        "name": "xray",
+        "type": "easy_negative",
+        "pred": [
+          0.0,
+          2.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 1.0,
+        "abs_score": 0.251,
+        "margin": -0.1965,
+        "peakiness": 2.571,
+        "accepted": true
+      }
+    },
+    "E3_abstention": {
+      "p1": {
+        "name": "clean_arm",
+        "type": "positive",
+        "pred": [
+          0.0,
+          16.0
+        ],
+        "gt": [
+          1,
+          7
+        ],
+        "tIoU": 0.4118,
+        "peak_t": 8.0,
+        "abs_score": 0.4673,
+        "margin": 0.0211,
+        "peakiness": 2.366,
+        "accepted": true
+      },
+      "p2": {
+        "name": "prepare_needle",
+        "type": "positive",
+        "pred": [
+          1.0,
+          6.0
+        ],
+        "gt": [
+          11,
+          15
+        ],
+        "tIoU": 0.0,
+        "peak_t": 4.0,
+        "abs_score": 0.4286,
+        "margin": -0.035,
+        "peakiness": 2.645,
+        "accepted": true
+      },
+      "p3": {
+        "name": "insert_needle",
+        "type": "positive",
+        "pred": [
+          68.0,
+          71.0
+        ],
+        "gt": [
+          16,
+          19
+        ],
+        "tIoU": 0.0,
+        "peak_t": 70.0,
+        "abs_score": 0.4469,
+        "margin": 0.0403,
+        "peakiness": 2.125,
+        "accepted": true
+      },
+      "p4": {
+        "name": "attach_tube",
+        "type": "positive",
+        "pred": [
+          56.0,
+          62.0
+        ],
+        "gt": [
+          36,
+          39
+        ],
+        "tIoU": 0.0,
+        "peak_t": 57.0,
+        "abs_score": 0.4037,
+        "margin": -0.0219,
+        "peakiness": 2.747,
+        "accepted": true
+      },
+      "p5": {
+        "name": "collect_blood",
+        "type": "positive",
+        "pred": [
+          66.0,
+          70.0
+        ],
+        "gt": [
+          45,
+          72
+        ],
+        "tIoU": 0.1786,
+        "peak_t": 68.0,
+        "abs_score": 0.423,
+        "margin": -0.0137,
+        "peakiness": 2.483,
+        "accepted": true
+      },
+      "p6": {
+        "name": "change_tube",
+        "type": "positive",
+        "pred": [
+          null,
+          null
+        ],
+        "gt": [
+          73,
+          77
+        ],
+        "tIoU": 0.0,
+        "peak_t": 4.0,
+        "abs_score": 0.3556,
+        "margin": -0.108,
+        "peakiness": 2.38,
+        "accepted": false
+      },
+      "h1": {
+        "name": "apply_tourniquet",
+        "type": "hard_negative",
+        "pred": [
+          7.0,
+          14.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 10.0,
+        "abs_score": 0.4506,
+        "margin": -0.0086,
+        "peakiness": 2.679,
+        "accepted": true
+      },
+      "h2": {
+        "name": "remove_tourniquet",
+        "type": "hard_negative",
+        "pred": [
+          7.0,
+          17.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 12.0,
+        "abs_score": 0.4417,
+        "margin": -0.0236,
+        "peakiness": 2.33,
+        "accepted": true
+      },
+      "h3": {
+        "name": "withdraw_needle",
+        "type": "hard_negative",
+        "pred": [
+          79.0,
+          83.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 81.0,
+        "abs_score": 0.4262,
+        "margin": -0.0192,
+        "peakiness": 2.134,
+        "accepted": true
+      },
+      "h4": {
+        "name": "press_cotton",
+        "type": "hard_negative",
+        "pred": [
+          2.0,
+          9.0
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 4.0,
+        "abs_score": 0.4532,
+        "margin": -0.0103,
+        "peakiness": 2.054,
+        "accepted": true
+      },
+      "e1": {
+        "name": "mri",
+        "type": "easy_negative",
+        "pred": [
+          null,
+          null
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 37.0,
+        "abs_score": 0.2581,
+        "margin": -0.1567,
+        "peakiness": 2.015,
+        "accepted": false
+      },
+      "e2": {
+        "name": "blood_pressure",
+        "type": "easy_negative",
+        "pred": [
+          null,
+          null
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 14.0,
+        "abs_score": 0.3572,
+        "margin": -0.0862,
+        "peakiness": 2.437,
+        "accepted": false
+      },
+      "e3": {
+        "name": "xray",
+        "type": "easy_negative",
+        "pred": [
+          null,
+          null
+        ],
+        "gt": null,
+        "tIoU": null,
+        "peak_t": 1.0,
+        "abs_score": 0.251,
+        "margin": -0.1965,
+        "peakiness": 2.571,
+        "accepted": false
+      }
+    }
+  }
+}

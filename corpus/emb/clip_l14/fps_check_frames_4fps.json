@@ -1,0 +1,30 @@
+[
+ {
+  "clip": "px6290525_B_blood_extraction_close_up",
+  "n_frames": 127,
+  "endpoint": 0.028986744582653046,
+  "step_vote": 0.01587301678955555,
+  "step_mean": 0.003220381448045373
+ },
+ {
+  "clip": "px6290530_B_a_medical_professional_using_a_tourniquet_on",
+  "n_frames": 80,
+  "endpoint": -0.1022099032998085,
+  "step_vote": -0.037974681705236435,
+  "step_mean": -0.0023857855703681707
+ },
+ {
+  "clip": "px8460350_A_putting_band_aid_on_a_persons_arm",
+  "n_frames": 85,
+  "endpoint": -0.035278622061014175,
+  "step_vote": 0.0,
+  "step_mean": -0.0036807027645409107
+ },
+ {
+  "clip": "v13_video_of_venipuncture_blood_draw_or_collection_u",
+  "n_frames": 60,
+  "endpoint": 0.06507746130228043,
+  "step_vote": -0.050847455859184265,
+  "step_mean": 0.00026423975941725075
+ }
+]
