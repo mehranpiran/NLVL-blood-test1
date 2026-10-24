@@ -13,6 +13,29 @@ The pilot has two parts:
    11 independent shoots. This part tests whether a frozen CLIP model can tell an action
    apart from its reverse.
 
+## Main results at a glance
+
+**1. Localisation accuracy.** A larger encoder (CLIP ViT-L/14, orange) plus temporal
+smoothing gives the best localisation (mean tIoU 0.265). Abstention then rejects absent
+actions at no cost to accuracy.
+
+![Localisation accuracy and rejection of absent actions](figures/fig4_summary.png)
+
+**2. The model cannot tell an action from its opposite.** The score curve for *"inserts the
+needle"* is almost identical to the one for *"pulls the needle out"* (r = 0.97, same peak
+frame), even though the needle is never pulled out in the video. An unrelated query
+(MRI scanner) is clearly separated.
+
+![Opposite query tracks the true one](figures/fig2b_oppositional_with_reference.png)
+
+**3. Playing the video backwards changes nothing.** Across all 21 clips, the scores of the
+reversed clips differ from the forward ones only by float32 rounding (largest difference
+1.19e-07). A frozen frame-level model therefore cannot know which direction an action goes.
+
+![Forward vs reversed scores](figures/multivideo/fig_mv2_reversal.png)
+
+The full write-up is in [`docs/Results.docx`](docs/Results.docx).
+
 ## The video
 
 > **Original video:** [*A Person Having a Blood Examination* on Pexels (video 8460351)](https://www.pexels.com/video/a-person-having-a-blood-examination-8460351/)
@@ -129,7 +152,7 @@ data/         frames/ (84 frames), frames.csv, queries.json, ground_truth.json, 
 outputs/      per model: embeddings.npz, scores.npz, predictions.json, results.json, figures
 corpus/       multi-video frames, embeddings (emb/clip_l14) and manifests
 figures/      all figures, including annotation_evidence/ and multivideo/
-docs/         proposal and results reports (.docx)
+docs/         Results.docx, the full results report
 ```
 
 ## Reproducing
